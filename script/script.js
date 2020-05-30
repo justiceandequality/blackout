@@ -19,7 +19,7 @@ if (today.getDate() === 30 && today.getMonth() === 4 && today.getFullYear() === 
                     <h2 style="font-size:3em; text-align:center;">June 7th 2020</h2>
                     <div style="font-size:2.5em; max-width:22em; margin:0 auto; margin-top:2em;">
                         <p>We are joining the blackout. Our neighbors, our friends, our family, and our coworkers are being treated unfairly, and that's an understatment.</p> <p style="margin-top:.5em;">Today, we choose to take a step towards action. We choose to be involved and let it affect us.</p>
-                        <p style="margin-top:.5em;">You can still view our site, but before doing so, please join us in taking action. Join us in repairing our country</p>
+                        <p style="margin-top:.5em;">You can still view our site, but before doing so, please join us in taking action. Join us in the fight for equality</p>
                     </div>
                     <div style="text-align:center; margin-top:2em;">
                         <button style="background-color:#fff; color:#000; padding:.5em; border-radius:0.25rem;" onclick="handleContinueToSiteClick()">View Website</button>
@@ -31,7 +31,7 @@ if (today.getDate() === 30 && today.getMonth() === 4 && today.getFullYear() === 
 
     blackOutBubble.style = 'position:absolute; height:8em; width:8em; border-bottom-right-radius:9999px; background-color:#000; top:0; left:0; cursor:pointer; z-index:99999; color:#fff; font-size:1em; padding-left:1.5em; padding-top:1em;'
     blackOutBubble.onclick = function () { handleBubbleClick() }
-    blackOutBubble.innerHTML = 'Black <br>lives<br> matter'
+    blackOutBubble.innerHTML = 'Blackout <br> 2020'
     body.append(blackOutBubble)
 
     function handleContinueToSiteClick() {

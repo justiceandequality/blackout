@@ -8,10 +8,10 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tailwindcss/ui@latest/dist/tailwind-ui.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.0/styles/a11y-dark.min.css">
         <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.0.0/dist/alpine.js" defer></script>
-        <!-- <script src="https://cdn.jsdelivr.net/gh/justiceandequality/blackout@0.2/script/script.min.js" defer></script> -->
+        <script src="https://cdn.jsdelivr.net/gh/justiceandequality/blackout@0.3/script/script.min.js" defer></script>
     </head>
     <body>
-        <div class="h-screen w-full bg-white">
+        <div class="h-screen w-full bg-black">
             <header>
                 <h1 class="text-white text-6xl font-black text-center">Blackout 2020</h1>
                 <h2 class="text-white max-w-md mx-auto text-2xl">Take a stand for equality. Take a stand for protection and safety. Take a stand, so that our brothers and sisters don't walk the streets in fear.</h2>
@@ -23,7 +23,7 @@
             <div class="relative max-w-3xl mx-auto mt-8" x-data="{}">
                 <div class="flex justify-end">
                     <textarea class="sr-only whitespace-pre-wrap" aria-hidden x-ref="blackOutScript">
-                        &lt;script src="https://cdn.jsdelivr.net/gh/justiceandequality/blackoutscript@0.2/script/script.min.js"&gt;&lt;/script&gt;
+                        &lt;script src="https://cdn.jsdelivr.net/gh/justiceandequality/blackoutscript@0.3/script/script.min.js"&gt;&lt;/script&gt;
                     </textarea>
                     <button type="button" @click="$refs.blackOutScript.select(); document.execCommand('copy');" class="p-1 text-gray-400 hover:text-gray-500 text-right flex justify-between items-center">
                         <span class="mr-2">Copy Code</span>
@@ -35,7 +35,7 @@
                     </button>
                 </div>
                 <pre class="block scrollbar-none m-0 p-2 overflow-auto text-black text-sm leading-noraml">
-                    <code class="inline-block p-4 scrolling-touch subpixel-antialiased language-javascript rounded bg-white text-black mx-auto max-w-5xl shadow overflow-x">&lt;script src="https://cdn.jsdelivr.net/gh/justiceandequality/blackoutscript@0.2/script/script.min.js"&gt;&lt;/script&gt;</code>
+                    <code class="inline-block p-4 scrolling-touch subpixel-antialiased language-javascript rounded bg-white text-black mx-auto max-w-5xl shadow overflow-x">&lt;script src="https://cdn.jsdelivr.net/gh/justiceandequality/blackout@0.3/script/script.min.js"&gt;&lt;/script&gt;</code>
                 </pre>
             </div>
         </div>
