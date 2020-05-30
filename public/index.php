@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tailwindcss/ui@latest/dist/tailwind-ui.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.0/styles/a11y-dark.min.css">
         <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.0.0/dist/alpine.js" defer></script>
-        <script src="https://cdn.jsdelivr.net/gh/justiceandequality/blackout@0.2/script/script.min.js" defer></script>
+        <!-- <script src="https://cdn.jsdelivr.net/gh/justiceandequality/blackout@0.2/script/script.min.js" defer></script> -->
     </head>
     <body>
         <div class="h-screen w-full bg-black">
@@ -44,12 +44,6 @@
         <script>
             const today = new Date()
             if (today.getDate() === 30 && today.getMonth() === 4 && today.getFullYear() === 2020) {
-                // create blackout element
-                const blackOutBubble = document.createElement('div')
-                blackOutBubble.id = 'justiceandequality-blackout-bubble'
-
-                blackOutBubble.style = 'position:absolute; height:8em; width:8em; border-bottom-right-radius:9999px; background-color:#000; top:0; left:0;'
-
                 const blackOut = document.createElement('div')
                 blackOut.id = 'justiceandequality-blackout'
 
@@ -59,7 +53,7 @@
                 const body = document.body
                 // Append the blackout element to it
                 body.append(blackOut)
-                body.append(blackOutBubble)
+
                 blackOut.innerHTML =
                 `<div style="color:#fff;">
                     <div style="position:absolute; top:0; right:0; padding:.5em; text-align:right; color:#fff;">
@@ -74,6 +68,13 @@
                         <button style="background-color:#fff; color:#000; padding:.5em; border-radius:0.25rem;" onclick="handleContinueToSiteClick()">View Website</button>
                     </div>
                 </div>`
+
+                const blackOutBubble = document.createElement('div')
+                blackOutBubble.id = 'justiceandequality-blackout-bubble'
+
+                blackOutBubble.style = 'position:absolute; height:8em; width:8em; border-bottom-right-radius:9999px; background-color:#000; top:0; left:0; cursor:pointer; z-index:99999;'
+                blackOutBubble.onclick = function () { handleBubbleClick() }
+                body.append(blackOutBubble)
 
                 function handleContinueToSiteClick() {
                     blackOut.style.display = 'none'
