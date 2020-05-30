@@ -40,6 +40,6 @@
         </div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.0/highlight.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script>
-        <script src="https://cdn.jsdelivr.net/gh/justiceandequality/blackoutscript@master/script/script.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/justiceandequality/blackout@0.1/script/script.min.js"></script>
     </body>
 </html>
