@@ -22,7 +22,7 @@
             <div class="relative max-w-3xl mx-auto mt-8" x-data="{}">
                 <div class="flex justify-end">
                     <textarea class="sr-only whitespace-pre-wrap" aria-hidden x-ref="blackOutScript">
-                        <!-- "<script>const blackOut = document.createElement('div') blackOut.style = 'position:absolute; top:0; bottom:0; background-color:#000000; height:100%; width:100%; z-index:999999;' const body = document.body body.append(blackOut) body.style.overflow = 'hidden'</script>" -->
+                        &lt;script src="https://cdn.jsdelivr.net/gh/justiceandequality/blackoutscript@master/script/script.min.js"&gt;&lt;/script&gt;
                     </textarea>
                     <button type="button" @click="$refs.blackOutScript.select(); document.execCommand('copy');" class="p-1 text-gray-400 hover:text-gray-500 text-right flex justify-between items-center">
                         <span class="mr-2">Copy Code</span>
@@ -40,5 +40,6 @@
         </div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.0/highlight.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script>
+        <script src="https://cdn.jsdelivr.net/gh/justiceandequality/blackoutscript@master/script/script.min.js"></script>
     </body>
 </html>
